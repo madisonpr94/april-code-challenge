@@ -85,7 +85,7 @@ namespace DoBApp
 
                 try
                 {
-                    using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate, FileAccess.Write))
+                    using (FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.Write))
                     using(StreamWriter writer = new StreamWriter(fs))
                     {
                         writer.Write(json);
