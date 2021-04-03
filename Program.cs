@@ -46,7 +46,7 @@ namespace DoBApp
         {
             if (people.Count == 0)
             {
-                Console.WriteLine("No family members were provided! Cannot provide statistics.");
+                Console.WriteLine("\nNo family members were provided! Cannot provide statistics.");
             }
             else
             {
