@@ -17,8 +17,11 @@ namespace DoBApp
 
         public int GetAge()
         {
+            // Days since birth
             TimeSpan ts = DateTime.Today - DateOfBirth;
-            return ts.Days / 365;
+
+            // Ensure leap years are accounted for
+            return (int)Math.Floor((ts.Days + 1) / 365.25f);
         }
     }
 }
